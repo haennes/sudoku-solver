@@ -83,6 +83,7 @@ mod tests {
             }
         }
         sudoku.solve();
+        print!("{}",sudoku);
         assert!(sudoku.completed());
     }
 }

@@ -60,7 +60,7 @@ impl Sudoku {
                 stdin()
                     .read_line(&mut number_input)
                     .expect("Oops something went wrong with your Input");
-                let _ = number_input.trim();
+                let number_input = number_input.trim();
                 //debug_println!("input {}input",number_input);
                 if number_input != "".to_string() {
                     match number_input.parse::<u8>() {
